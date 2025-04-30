@@ -111,6 +111,21 @@ footer {
   color: #64748b;
 }
 
+/* ---- new cenetering  ---- */
+
+/* Center content for 'about' and 'benefits' sections */
+.about, .benefits {
+  text-align: center;
+}
+
+/* bullet points */
+.benefits ul {
+  display: inline-block;
+  text-align: left;
+  margin: 0 auto;
+}
+
+
 
 
 
