@@ -1,58 +1,69 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
+  background-color: #fdfdfd;
   color: #333;
-  background: #f9f9f9;
+  line-height: 1.6;
 }
 
-header {
-  background: #3a86ff;
-  color: white;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.hero {
+  background: linear-gradient(to right, #63a4ff, #83eaf1);
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  margin-left: 1rem;
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
 }
 
-nav a:hover {
-  text-decoration: underline;
+.hero p {
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
 }
 
-section {
+.feature, .benefits {
   padding: 2rem;
   max-width: 800px;
   margin: auto;
+  text-align: center;
 }
 
-#hero {
-  text-align: center;
-  background: #e0f2fe;
-  padding: 3rem 1rem;
-  margin-bottom: 2rem;
+.feature h2 {
+  color: #63a4ff;
+}
+
+.benefits h2 {
+  color: #ff6b6b;
 }
 
 ul {
-  list-style-type: disc;
-  padding-left: 1.5rem;
+  list-style: none;
+  padding: 0;
 }
 
-#ad {
-  background: #fff0f6;
-  padding: 1.5rem;
-  margin-top: 2rem;
-  border: 1px solid #ffccd5;
+ul li {
+  margin: 0.75rem 0;
+  font-size: 1.1rem;
 }
 
 footer {
   text-align: center;
   padding: 1rem;
-  background: #333;
-  color: white;
-  margin-top: 3rem;
+  background: #222;
+  color: #ccc;
 }
+
+/* Reveal Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
