@@ -40,11 +40,7 @@ section {
 section h2 {
   font-size: 2rem;
   color: #f43f5e;
-  margin-bottom: 1rem;
-}
-
-section p, section ul {
-  color: #e2e8f0;
+  margin-bottom: 2rem;
 }
 
 .stats {
@@ -85,25 +81,6 @@ section p, section ul {
   text-decoration: none;
 }
 
-.advantages ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.advantages li {
-  margin-bottom: 1rem;
-  padding-left: 1.5rem;
-  position: relative;
-}
-
-.advantages li::before {
-  content: '✔';
-  color: #22d3ee;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
 footer {
   text-align: center;
   padding: 2rem;
@@ -111,19 +88,44 @@ footer {
   color: #64748b;
 }
 
-/* ---- new cenetering  ---- */
+/* New Benefits Section */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
 
-/* Center content for 'about' and 'benefits' sections */
-.about, .benefits {
+.benefit-card {
+  background-color: #1f2937;
+  padding: 2rem;
+  border-radius: 1rem;
   text-align: center;
+  box-shadow: 0 0 20px rgba(34, 211, 238, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* bullet points */
-.benefits ul {
-  display: inline-block;
-  text-align: left;
-  margin: 0 auto;
+.benefit-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px rgba(244, 63, 94, 0.3);
 }
+
+.benefit-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.benefit-card h3 {
+  font-size: 1.5rem;
+  color: #22d3ee;
+  margin-bottom: 0.5rem;
+}
+
+.benefit-card p {
+  color: #e2e8f0;
+  font-size: 1rem;
+}
+
 
 
 
