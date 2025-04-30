@@ -3,50 +3,124 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Trifold Workspace</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Trifold Workspace | Your Personal Study Space</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <div id="particles-js"></div>
 
-  <header>
-    <h1>The Trifold Workspace</h1>
-    <p>The ultimate classroom sidekick for focus, organization, and creativity.</p>
-  </header>
+<!-- Particle Background -->
+<div id="particles-js"></div>
 
-  <section>
-    <h2>Why the Trifold Workspace?</h2>
-    <div class="benefits-grid">
-      <div class="benefit-card">
-        <div class="benefit-icon">📱</div>
-        <h3>Integrated iPad Stand</h3>
-        <p>Secure middle slot to hold your tablet at the perfect angle for work or reading.</p>
-      </div>
-      <div class="benefit-card">
-        <div class="benefit-icon">📝</div>
-        <h3>Removable Whiteboards</h3>
-        <p>Write, doodle, solve problems, or brainstorm ideas right next to your workspace. Wipe clean and reuse instantly.</p>
-      </div>
-      <div class="benefit-card">
-        <div class="benefit-icon">📡</div>
-        <h3>Student-Teacher Communication</h3>
-        <p>Raise your digital hand, receive encouragement emojis, or discreetly ask for help without disrupting the class.</p>
-      </div>
-      <div class="benefit-card">
-        <div class="benefit-icon">💼</div>
-        <h3>Foldable Briefcase Design</h3>
-        <p>Lightweight and portable — folds into a sleek carrying case to take from class to class.</p>
-      </div>
+<header>
+  <h1>📚 Trifold Workspace</h1>
+  <p>Your personal, portable, distraction-free study station.</p>
+</header>
+
+<section class="about" data-aos="fade-up">
+  <h2>What is the Trifold Workspace?</h2>
+  <p>It’s a foldable briefcase-style workspace with removable whiteboards, an iPad slot, a teacher-student communication system, and privacy shields. Perfect for students — especially those with attention challenges like ADHD — to stay focused in any classroom.</p>
+</section>
+
+<section class="features">
+  <div class="card" data-aos="fade-up">
+    <h3>📱 Integrated iPad Stand</h3>
+    <p>Secure middle slot to hold your tablet at the perfect angle for work or reading.</p>
+  </div>
+
+  <div class="card" data-aos="fade-up">
+    <h3>📝 Removable Whiteboards</h3>
+    <p>Write, doodle, solve problems, or brainstorm ideas right next to your workspace. Wipe clean and reuse instantly.</p>
+  </div>
+
+  <div class="card" data-aos="fade-up">
+    <h3>📡 Student-Teacher Communication</h3>
+    <p>Raise your digital hand, receive encouragement emojis, or discreetly ask for help without disrupting the class.</p>
+  </div>
+
+  <div class="card" data-aos="fade-up">
+    <h3>💼 Foldable Briefcase Design</h3>
+    <p>Lightweight and portable — folds into a sleek carrying case to take from class to class.</p>
+  </div>
+</section>
+
+<section class="benefits" data-aos="fade-up">
+  <h2>Why the Trifold Workspace?</h2>
+  <ul>
+    <li>Helps students with ADHD block out distractions.</li>
+    <li>Reduces digital overwhelm while keeping necessary tools nearby.</li>
+    <li>Encourages healthy focus habits in a physical, interactive workspace.</li>
+    <li>Makes classrooms more flexible, organized, and personal.</li>
+  </ul>
+</section>
+
+<section class="stats" data-aos="fade-up">
+  <h2>The Science Behind the Trifold Workspace</h2>
+  <div class="stat-grid">
+    <div class="stat-card">
+      <h3>11%</h3>
+      <p>of school-age children are diagnosed with ADHD.</p>
+      <small><a href="https://www.changelabsolutions.org/blog/adhd-school-environment" target="_blank">Source</a></small>
     </div>
-  </section>
+    <div class="stat-card">
+      <h3>Improved Attention</h3>
+      <p>Cognitively engaging exercises significantly improve attention in children with ADHD.</p>
+      <small><a href="https://www.frontiersin.org/articles/10.3389/fphys.2023.1189443/full" target="_blank">Source</a></small>
+    </div>
+    <div class="stat-card">
+      <h3>Enhanced Focus</h3>
+      <p>Physical activity interventions have a moderate effect in improving attention problems in school-aged children with ADHD.</p>
+      <small><a href="https://www.frontiersin.org/articles/10.3389/fphys.2023.1189443/full" target="_blank">Source</a></small>
+    </div>
+  </div>
+</section>
 
-  <footer>
-    &copy; 2025 Trifold Workspace. All rights reserved.
-  </footer>
-  
-  <script src="particles.min.js"></script>
-  <script src="particles-config.js"></script>
+<section class="advantages" data-aos="fade-up">
+  <h2>Why the Trifold Workspace Stands Out</h2>
+  <ul>
+    <li><strong>Integrated Technology:</strong> Combines physical workspace with digital tools for a balanced, healthier school experience.</li>
+    <li><strong>Portability:</strong> Foldable design makes it easy to carry anywhere.</li>
+    <li><strong>Customizable:</strong> Removable whiteboards and adjustable iPad stand for your style of learning.</li>
+    <li><strong>Discreet Communication:</strong> Quietly notify teachers or get encouragement without disrupting class.</li>
+    <li><strong>Focus-Friendly:</strong> Reduces distractions and helps kids with ADHD stay locked in.</li>
+  </ul>
+</section>
+
+<footer>
+  <p>Designed for students, by students. Focus smarter with your own Trifold Workspace.</p>
+  <p>&copy; 2025 Trifold Workspace Project</p>
+</footer>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ once: true });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+  particlesJS('particles-js', {
+    "particles": {
+      "number": { "value": 50 },
+      "color": { "value": "#22d3ee" },
+      "shape": { "type": "circle" },
+      "opacity": { "value": 0.1 },
+      "size": { "value": 3 },
+      "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": "#22d3ee",
+        "opacity": 0.1,
+        "width": 1
+      },
+      "move": { "enable": true, "speed": 2 }
+    },
+    "retina_detect": true
+  });
+</script>
+
 </body>
 </html>
+
 
 
