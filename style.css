@@ -125,6 +125,62 @@ footer {
   margin: 0 auto;
 }
 
+/* ---- TESTIMONIALS SECTION ---- */
+
+.testimonials {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  color: #f43f5e;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* Shared card style */
+.testimonial-card {
+  background-color: #1f2937;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(34, 211, 238, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px rgba(244, 63, 94, 0.4);
+}
+
+.testimonial-card p {
+  color: #e2e8f0;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.testimonial-card .author {
+  font-weight: bold;
+}
+
+/* Student testimonial style */
+.testimonial-student {
+  border-left: 4px solid #22d3ee;
+}
+
+/* Teacher testimonial style */
+.testimonial-teacher {
+  border-left: 4px solid #f43f5e;
+}
+
+
 
 
 
